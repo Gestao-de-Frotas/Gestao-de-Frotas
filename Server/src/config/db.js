@@ -7,6 +7,7 @@ const sequelize = new Sequelize(process.env.MYSQL_DB, process.env.MYSQL_USER, pr
   host: process.env.MYSQL_HOST,
   port: process.env.MYSQL_PORT,
   dialect: 'mysql',
+  logging: false // Evita muitos logs no console
 });
 
 module.exports = sequelize;
