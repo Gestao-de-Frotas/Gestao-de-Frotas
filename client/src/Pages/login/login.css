@@ -1,9 +1,9 @@
 :root {
   --color1: #260d33; /*Background de Formulários*/
-  --color2: #003f69; /*Caixas de texto e outros imputs*/
-  --color3: #106b87; /*Função de ação. Exemplo: Botão*/
-  --color4: #157a8c; /*Adicional coloração*/
-  --color5: #f1ddba; /*Background*/
+  --color2: #60d45c; /*Caixas de texto e outros imputs*/
+  --color3: #3e8544; /*Função de ação. Exemplo: Botão*/
+  --color4: #9bd19f; /*Adicional coloração*/
+  --color5: #c980f14b; /*Background*/
 }
 
 body {
