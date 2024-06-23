@@ -11,7 +11,10 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/api/login', { username, password });
+            const response = await axios.post('/api/login', { 
+                login: username, 
+                senha: password 
+            });
             localStorage.setItem('token', response.data.token);
             setMessage('Login bem-sucedido');
         } catch (err) {
@@ -38,7 +41,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             <p>{message}</p>
-            <Link to="/register">Registrar</Link>
+            <Link to="/register" className="login-link">Registrar</Link>
         </div>
     );
 };
